@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COBAY SANTA ROSA VESPERTINO</title>
+    <script src="https://kit.fontawesome.com/03a89292db.js" crossorigin="anonymous"></script>
+    <style>
+body{
+        background-color: #0c2c59;
+    }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        h1 {
+            text-align: center;
+            background-color: aliceblue;
+            padding: 20px;
+        }
+
+        section {
+            padding: 20px;
+        }
+
+        p {
+            color: wheat;
+        }
+
+        .encabezado {
+            width: 100%;
+            background: rgb(6, 6, 63);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .Lista {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+        }
+
+        .item {
+            padding: 15px;
+            color: white;
+        }
+
+        .item:hover {
+            background-color: rgb(56, 64, 71);
+            border-bottom: solid white 1px;
+        }
+
+        .lisitem {
+            position: relative;
+        }
+
+        .lisitem:hover .slide {
+            display: block;
+        }
+
+        .slide {
+            display: none;
+            position: absolute;
+            background: rgb(6, 6, 63);
+            padding: 10px;
+            top: 50px;
+            left: 0;
+        }
+
+        .slide a {
+            display: block;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+        }
+        .lisitem.active .slide{
+            display: block;
+        }
+
+        #boton {
+            background-color: transparent;
+            border: none;
+            font-size: 24px;
+            color: white;
+            cursor: pointer;
+        }
+        body {
+            background-size: cover;
+            background-position: center;
+            font-family: Arial, sans-serif;
+            color: darkred;
+            margin: 0;
+            padding: 0;
+        }
+
+        button {
+            display: block;
+            margin: 20px auto;
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #333;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .postre {
+            background-color: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .postre img {
+            width: 400px;
+            height:300px;
+            border-bottom: 2px solid #ddd;
+        }
+
+        .postre-info {
+            padding: 20px;
+            text-align: center;
+        }
+
+        h2, p, span {
+            margin-bottom: 10px;
+            color:black;
+        }
+
+        h2 {
+            font-size: 1.5em;
+        }
+
+        span {
+            color: darkgreen;
+            font-weight: bold;
+        }
+
+footer {
+            background-color:white;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position:unset;
+            width: 100%;
+            bottom: 0;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 17px;
+        }
+.pepe{
+    position: fixed;
+    top: 10px;
+    left:10px;
+    font-size: 30px;
+}
+.pepe {
+    display: inline-block;
+    padding: 10px 20px; 
+    background-color: #007bff;
+        color: #ffffff; 
+    text-decoration: none; 
+        border-radius: 5px; 
+    border: none; 
+    font-size: 16px; 
+    cursor: pointer; 
+    transition: background-color 0.3s ease; 
+  }
+    </style>
+</head>
+<body>
+    <header class="encabezado">
+        <div class="logo__div"></div>
+        <nav>
+            <ul class="Lista">
+                <a class="lisitem" href="INICIO.HTML"><i class="fas fa-home"></i>INICIO</a>
+                <li class="lisitem">
+                    <a class="item" href="#"><i class="fas fa-home"></i> Comunidad</a>
+                    <ul class="slide">
+                        <li><a href="MAESTROS.HTML">Maestros</a></li>
+                        <li><a href="AUTORIDADES.HTML">Autoridades</a></li>
+                        <li><a href="ALUMNOS.HTML">Alumnos</a></li>
+                        <li><a href="CAPACITACIONES.HTML">Capacitaciones</a></li>
+                    </ul>
+                </li>
+                <li class="lisitem">
+                    <a class="item" href="#"><i class="fas fa-warehouse"></i> Nosotros</a>
+                    <ul class="slide">
+                        <li><a href="CALENDARIOS.HTML">Calendarios</a></li>
+                        <li><a href="CONVOCATORIAS.HTML">Convocatorias</a></li>
+                        <li><a href="PARAESCOLAR.HTML">Paraescolar</a></li>
+                        <li><a href="GRUPOS Y AULAS.HTML">Grupos y Aulas</a></li>
+                    </ul>
+                </li>
+                <li class="lisitem"><a class="item" href="UBICACION.HTML"><i class="fas fa-location-arrow"></i> Ubicacion</a></li>
+                <li class="lisitem"><a class="item" href="ACERCA DE.HTML"><i class="fas fa-info"></i> Acerca de</a></li>
+                <li class="lisitem"><a class="item" href="INSTALACIONES.HTML"><i class="fas fa-info"></i> Instalaciones</a></li>
+            </ul>
+        </nav>
+        <div class="boton__div">
+            <button id="boton"><i class="fas fa-bars"></i></button>
+        </div>
+    </header>
+    <h1>COBAY SANTA ROSA VESPERTINO</h1> 
+    <div class="container">
+        <div class="postre">
+            <img src="https://i.pinimg.com/736x/0d/73/a6/0d73a6ae1e2b1d45f7aaf9cb48b15e71.jpg" alt="">
+            <div class="postre-info">
+                <h2>DIRECTOR</h2>
+                <p>Licenciatura de administracion de empresas.</p>
+                <span></span>
+            </div>
+        </div>
+    
+        <div class="postre">
+            <img src="https://i.pinimg.com/736x/c5/bb/75/c5bb75413d3a4d2d85d726aea078c87b.jpg" alt="">
+            <div class="postre-info">
+                <h2>SUB DIRECTOR</h2>
+                <p>Roger Jose Cruz Nuca Mendi</p>
+                <p>Docencia</p>
+                <span></span>
+            </div>
+        </div>
+
+        <div class="postre">
+            <img src="https://i.pinimg.com/736x/04/1e/4e/041e4e06b3e2780ccf299347a404b770.jpg" alt="">
+            <div class="postre-info">
+                <h2>SUB DIRECTOR</h2>
+                <p>Diana Guadalupe Herrera Anduze</p>
+                <p>Licenciada en nutricion</p>
+                <span></span>
+            </div>
+        </div>
+</div>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const items = document.querySelectorAll('.lisitem');
+    
+            items.forEach(item => {
+                item.addEventListener('click', function () {
+                    const isActive = this.classList.contains('active');
+                    items.forEach(item => item.classList.remove('active'));
+                    if (!isActive) {
+                        this.classList.add('active');
+                    }
+                });
+            });
+    
+            const boton = document.getElementById('boton');
+            boton.addEventListener('click', function() {
+                const lista = document.querySelector('.Lista');
+                lista.classList.toggle('mostrar');
+            });
+        });
+    </script>
+
+<FOOTER><p>&COPY; 2024 ESCUELA COLEGIO DE BACHILLERES DEL ESTADO DE YUCATAN
+<br>
+Todos los derechos reservados</p> 
+<button onclick="window.location.href='INICIO.HTML'">Regresar a la Página Principal</button>
+<h1><a  class="pepe" href="#top">ARRIBA</a></h1>
+</FOOTER>
+</body>
+</html>

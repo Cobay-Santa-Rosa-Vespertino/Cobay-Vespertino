@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COBAY SANTA ROSA VESPERTINO</title>
+    <script src="https://kit.fontawesome.com/03a89292db.js" crossorigin="anonymous"></script>
+    <style>
+        body {
+            background-color: #0c2c59;
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        h1 {
+            text-align: center;
+            background-color: aliceblue;
+            padding: 20px;
+        }
+        section {
+            padding: 20px;
+        }
+        p {
+            color: black;
+        }
+        .encabezado {
+            width: 100%;
+            background: rgb(6, 6, 63);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+        }
+        ul {
+            list-style: none;
+        }
+        a {
+            text-decoration: none;
+            color: white;
+        }
+        .Lista {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+        }
+        .item {
+            padding: 15px;
+            color: white;
+        }
+        .item:hover {
+            background-color: rgb(56, 64, 71);
+            border-bottom: solid white 1px;
+        }
+        .lisitem {
+            position: relative;
+        }
+        .lisitem:hover .slide {
+            display: block;
+        }
+        .slide {
+            display: none;
+            position: absolute;
+            background: rgb(6, 6, 63);
+            padding: 10px;
+            top: 50px;
+            left: 0;
+        }
+        .slide a {
+            display: block;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+        }
+        .lisitem.active .slide {
+            display: block;
+        }
+        #boton {
+            background-color: transparent;
+            border: none;
+            font-size: 24px;
+            color: white;
+            cursor: pointer;
+        }
+        footer {
+            background-color: white;
+            color: #f8f6f4;
+            text-align: center;
+            padding: 10px 0;
+            position:unset;
+            bottom: 0;
+            width: 100%;
+        }
+footer {
+ background-color: #333;
+color: white;
+text-align: center;
+padding: 10px;
+position: unset;
+width: 100%;
+bottom: 0;
+        }
+button {
+display: block;
+margin: 20px auto;
+padding: 10px 20px;
+font-size: 16px;
+background-color: #333;
+color: white;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+        }
+footer{
+background-color: #f8f6f4 ;
+color: #f8f6f4;
+text-align: center;
+padding: 10px 0;
+position: unset;
+bottom: e;
+width: 100%;
+font-size: 25px;
+}
+        .pepe {
+            position: fixed;
+            top: 10px;
+            left: 10px;
+            font-size: 30px;
+        }
+.pepe {
+display: inline-block;
+padding: 10px 20px;
+background-color: #007bff;
+color: #ffffff;
+text-decoration: none;
+border-radius: 5px;
+border: none;
+font-size: 16px;
+cursor: pointer;
+transition: background-color 0.3s ease;
+        }
+.texto {
+color: #ffffff;
+text-shadow: 5px 7px 7px black, 0 0 25px blue, 0 0 blue;
+text-align: center;
+font-family: Georgia, 'Times New Roman', Times, serif;
+font-size: 17px;
+        }
+
+.pedro1 {
+    text-align: center;
+    text-shadow: 2px 2px 5px purple;
+    padding: 15px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 17px;
+}
+
+.pedro {
+    width: 90%;
+    max-width: 1500px;
+    max-height: 1500px;
+    margin: 0 auto; 
+    display: flex;
+    flex-wrap:wrap-reverse; 
+    justify-content: center; 
+}
+
+.card {
+    margin: 20px;
+    border-radius: 6px;
+    overflow: hidden;
+    background-color: #ffffff;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+    cursor: default;
+    transition: all 400ms ease;
+    flex: 10 0 auto; 
+    max-width: 400px;
+}
+
+.card:hover {
+    border: 5px solid lightcoral;
+    transform: rotate(-5deg);
+}
+
+.card img {
+    width: 100%;
+    height: auto; 
+}
+
+</style>
+</head>
+
+<body>
+    <header class="encabezado">
+        <div class="logo__div"></div>
+        <nav>
+            <ul class="Lista">
+                <a class="lisitem" href="INICIO.HTML"><i class="fas fa-home"></i>INICIO</a>
+                <li class="lisitem">
+                    <a class="item" href="#"><i class="fas fa-home"></i> Comunidad</a>
+                    <ul class="slide">
+                        <li><a href="MAESTROS.HTML">Maestros</a></li>
+                        <li><a href="AUTORIDADES.HTML">Autoridades</a></li>
+                        <li><a href="ALUMNOS.HTML">Alumnos</a></li>
+                        <li><a href="CAPACITACIONES.HTML">Capacitaciones</a></li>
+                    </ul>
+                </li>
+                <li class="lisitem">
+                    <a class="item" href="#"><i class="fas fa-warehouse"></i> Nosotros</a>
+                    <ul class="slide">
+                        <li><a href="CALENDARIOS.HTML">Calendarios</a></li>
+                        <li><a href="CONVOCATORIAS.HTML">Convocatorias</a></li>
+                        <li><a href="PARAESCOLAR.HTML">Paraescolar</a></li>
+                        <li><a href="GRUPOS Y AULAS.HTML">Grupos y Aulas</a></li>
+                    </ul>
+                </li>
+                <li class="lisitem"><a class="item" href="UBICACION.HTML"><i class="fas fa-location-arrow"></i> Ubicacion</a></li>
+                <li class="lisitem"><a class="item" href="ACERCA DE.HTML"><i class="fas fa-info"></i> Acerca de</a></li>
+                <li class="lisitem"><a class="item" href="INSTALACIONES.HTML"><i class="fas fa-info"></i> Instalaciones</a></li>
+            </ul>
+        </nav>
+        <div class="boton__div">
+            <button id="boton"><i class="fas fa-bars"></i></button>
+        </div>
+    </header>
+<h1>COBAY SANTA ROSA VESPERTINO</h1>
+
+<div class="pedro">
+    <div class="card">
+        <img src="DOCENCIA.PNG" alt="">
+        <div class="pedro1">
+            <h3>Capacitacion de Docencia</h3>
+            <p>6to Semestre</p>
+        </div>
+    </div>
+    <div class="card">
+        <img src="TICS.PNG" alt="">
+        <div class="pedro1">
+            <h3>Capacitacion de TECNOLOGIAS DE LA INFORMACIO Y LA COMUNICACION </h3>
+            <p>6to Semestre</p>
+        </div>
+    </div>
+    <div class="card">
+        <img src="ADMIN.PNG" alt="">
+        <div class="pedro1">
+            <h3>Capacitacion de ADMINISTRACION </h3>
+            <p>6to Semestre</p>
+        </div>
+    </div>
+    <div class="card">
+        <img src="higiene.png.jpeg" alt="">
+        <div class="pedro1">
+            <h3>Capacitacion de HIGIENE Y SALUD COMUNITARIA </h3>
+            <p>6to Semestre</p>
+        </div>
+    </div>
+    <div class="card">
+        <img src="TICS4.PNG.jpeg" alt="">
+        <div class="pedro1">
+            <h3>Capacitacion de TECNOLOGIAS DE LA INFORMACIO Y LA COMUNICACION </h3>
+            <p>4to Semestre</p>
+        </div>
+    </div>
+    <div class="card">
+        <img src="docencia.png.jpeg" alt="">
+        <div class="pedro1">
+            <h3>Capacitacion de Docencia</h3>
+            <p>4to Semestre</p>
+        </div>
+    </div>
+    <div class="card">
+        <img src="1semestre.png.jpeg" alt="">
+        <div class="pedro1">
+            <h3>Libros de primer año </h3>
+            <p>1er y 2do Semestre
+            <br>
+            Todos llevan estos libros
+            </p>
+        </div>
+    </div>
+    <div class="card">
+        <img src="COBAY5.PNG" alt="">
+        <div class="pedro1">
+            <h3>Capacitacion de HIGIENE Y SALUD COMUNITARIA</h3>
+            <p>4to Semestre</p>
+        </div>
+    </div>
+    <div class="card">
+        <img src="admin.png.jpeg" alt="">
+        <div class="pedro1">
+            <h3>Capacitacion de ADMINISTRACION</h3>
+            <p>4to Semestre</p>
+        </div>
+    </div>
+</div>
+
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const items = document.querySelectorAll('.lisitem');
+    
+            items.forEach(item => {
+                item.addEventListener('click', function () {
+                    const isActive = this.classList.contains('active');
+                    items.forEach(item => item.classList.remove('active'));
+                    if (!isActive) {
+                        this.classList.add('active');
+                    }
+                });
+            });
+    
+            const boton = document.getElementById('boton');
+            boton.addEventListener('click', function() {
+                const lista = document.querySelector('.Lista');
+                lista.classList.toggle('mostrar');
+            });
+        });
+    </script>
+    <footer>
+        <h1><a  class="pepe" href="#top">ARRIBA</a></h1>
+        <p>&COPY; 2024 ESCUELA COLEGIO DE BACHILLERES DEL ESTADO DE YUCATAN<br>Todos los derechos reservados</p>
+        <button onclick="window.location.href='INICIO.HTML'">Regresar a la Página Principal</button>
+    </footer>
+</body>
+</html>
+

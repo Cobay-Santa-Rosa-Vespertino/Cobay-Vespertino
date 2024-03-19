@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COBAY SANTA ROSA VESPERTINO</title>
+    <script src="https://kit.fontawesome.com/03a89292db.js" crossorigin="anonymous"></script>
+    <style>
+ body{
+    background-color: #0c2c59;
+    }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        h1 {
+            text-align: center;
+            background-color: aliceblue;
+            padding: 20px;
+        }
+
+        section {
+            padding: 20px;
+        }
+
+        p {
+            color: black;
+        }
+
+        .encabezado {
+            width: 100%;
+            background: rgb(6, 6, 63);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .Lista {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+        }
+
+        .item {
+            padding: 15px;
+            color: white;
+        }
+
+        .item:hover {
+            background-color: rgb(56, 64, 71);
+            border-bottom: solid white 1px;
+        }
+
+        .lisitem {
+            position: relative;
+        }
+
+        .lisitem:hover .slide {
+            display: block;
+        }
+
+        .slide {
+            display: none;
+            position: absolute;
+            background: rgb(6, 6, 63);
+            padding: 10px;
+            top: 50px;
+            left: 0;
+        }
+
+        .slide a {
+            display: block;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+        }
+
+        #boton {
+            background-color: transparent;
+            border: none;
+            font-size: 24px;
+            color: white;
+            cursor: pointer;
+        }
+        body {
+            background-size: cover;
+            background-position: center;
+            font-family: Arial, sans-serif;
+            color: black;
+            margin: 0;
+            padding: 0;
+        }
+
+        button {
+            display: block;
+            margin: 20px auto;
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #333;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .postre {
+            background-color: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .postre img {
+            width: 400px;
+            height:300px;
+            border-bottom: 2px solid #ddd;
+        }
+
+        .postre-info {
+            padding: 20px;
+            text-align: center;
+        }
+
+        h2, p, span {
+            margin-bottom: 10px;
+            color:black;
+        }
+
+        h2 {
+            font-size: 1.5em;
+        }
+
+        span {
+            color: darkgreen;
+            font-weight: bold;
+        }
+footer {
+ background-color: #333;
+color: white;
+text-align: center;
+padding: 10px;
+position: unset;
+width: 100%;
+bottom: 0;
+        }
+button {
+display: block;
+margin: 20px auto;
+padding: 10px 20px;
+font-size: 16px;
+background-color: #333;
+color: white;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+        }
+footer{
+background-color: #f8f6f4 ;
+color: #f8f6f4;
+text-align: center;
+padding: 10px 0;
+position: unset;
+bottom: e;
+width: 100%;
+font-size: 25px;
+}
+.pepe{
+    position: fixed;
+    top: 10px;
+    left:10px;
+    font-size: 30px;
+}
+.pepe {
+    display: inline-block;
+    padding: 10px 20px; 
+    background-color: #007bff;
+        color: #ffffff; 
+    text-decoration: none; 
+        border-radius: 5px; 
+    border: none; 
+    font-size: 16px; 
+    cursor: pointer; 
+    transition: background-color 0.3s ease; 
+  }
+    </style>
+</head>
+<body>
+    <header class="encabezado">
+        <div class="logo__div"></div>
+        <nav>
+            <ul class="Lista">
+                <a class="lisitem" href="INICIO.HTML"><i class="fas fa-home"></i>INICIO</a>
+                <li class="lisitem">
+                    <a class="item" href="#"><i class="fas fa-home"></i> Comunidad</a>
+                    <ul class="slide">
+                        <li><a href="PARAESCOLAR.HTML">Paraescolar</a></li>
+                        <li><a href="AUTORIDADES.HTML">Autoridades</a></li>
+                        <li><a href="ALUMNOS.HTML">Alumnos</a></li>
+                        <li><a href="CAPACITACIONES.HTML">Capacitaciones</a></li>
+                    </ul>
+                </li>
+                <li class="lisitem">
+                    <a class="item" href="#"><i class="fas fa-warehouse"></i> Nosotros</a>
+                    <ul class="slide">
+                        <li><a href="CALENDARIOS.HTML">Calendarios</a></li>
+                        <li><a href="CONVOCATORIAS.HTML">Convocatorias</a></li>
+                        <li><a href="MAESTROS.HTML">Maestros</a></li>
+                        <li><a href="GRUPOS Y AULAS.HTML">Grupos y Aulas</a></li>
+                    </ul>
+                </li>
+                <li class="lisitem"><a class="item" href="#"><i class="fas fa-location-arrow"></i> Ubicacion</a></li>
+                <li class="lisitem"><a class="item" href="#"><i class="fas fa-info"></i> Acerca de</a></li>
+                <li class="lisitem"><a class="item" href="#"><i class="fas fa-info"></i> Instalaciones</a></li>
+            </ul>
+        </nav>
+        <div class="boton__div">
+            <button id="boton"><i class="fas fa-bars"></i></button>
+        </div>
+    </header>
+    <h1>COBAY SANTA ROSA VESPERTINO</h1>
+</section>
+<h1>Paraescolares</h1>
+<div class="container">
+
+<div class="postre">
+<img src="VOLEIBALL2.png" alt="">
+
+<div class="postre-info">
+<h2>VOLEIBOL VARONIL Y FEMENIL</h2>
+<p>El voleibol es la opción perfecta para ti! Tanto en la rama varonil como en la femenil, este deporte estimula el equilibrio, la simetría de las extremidades y te reta a alcanzar un rendimiento óptimo.
+    <br>
+
+    En nuestra escuela, nos enfocamos en desarrollar no solo tus habilidades físicas, sino también tus reflejos y capacidad de reacción. El voleibol es un deporte dinámico que te mantendrá alerta en todo momento, trabajando en equipo para evitar que el balón toque el suelo en tu lado de la cancha.
+    <br>
+    Además, el voleibol es un deporte completo e igualitario, donde la fuerza, la estrategia y la técnica se combinan para crear un ambiente competitivo y emocionante para todos.</p>
+<span>HORARIO:Martes 7:50 a 8:40</span>
+</div>
+
+</div>
+<div class="postre">
+
+    <img src="BANDA DE GUERRA2.png" alt=""> 
+    <div class="postre-info">
+    <h2>ESCOLTA Y BANDA DE GUERRA</h2>
+    <p>La Banda de Guerra no solo es una disciplina, ¡es un símbolo de identidad y orgullo nacional! En nuestro colegio, promovemos valores cívicos arraigados en la honestidad y el respeto, mientras celebramos nuestra mexicanidad y nuestros símbolos patrios. Los alumnos que forman parte de nuestra banda comprenden la importancia del trabajo en equipo, fortaleciendo lazos de compañerismo y esforzándose en sus roles para alcanzar la excelencia.
+       <br>
+        Ser parte de la Escolta es más que un privilegio, es un compromiso con nuestra comunidad y nuestro país. Participar en los actos cívicos no solo favorece la formación ciudadana, sino que también te brinda la oportunidad de desarrollar habilidades de liderazgo, perseverancia y conciencia social.</p>
+    <span>HORARIO:8:30 a 10:30 y 10:30 a 12:30 sabados    </span>
+    </div>
+    </div>
+
+<div class="postre">
+    <img src="DANZA.png" alt="">
+    <div class="postre-info">
+    <h2>DANZA MODERNA  Y FOLCLOR</h2>
+    <p>En nuestra escuela, la danza folclórica mexicana cobra vida con la magia de Yucatán. Sumérgete en bailes tradicionales que no solo enlazan generaciones, sino que también reflejan la identidad y las raíces de nuestros pueblos. ¡Representa con orgullo a nuestro colegio en cada actividad cultural y deportiva, llevando la esencia vibrante de nuestra cultura a cada paso que damos!
+        <br>
+        Por otro lado, la danza moderna te invita a explorar la libertad del movimiento y la expresión personal. En nuestras clases, encontrarás un espacio donde tus emociones, metáforas y pensamientos abstractos se convierten en una coreografía única.</p>
+    <span> HORARIO: 7:00 a 8:00 Miercoles   </span>
+    </div>
+    </div>
+    <div class="postre">
+        <img src="BASKETBALL2.png" alt="">
+        <div class="postre-info">
+        <h2>BASQUETBOL  VARONIL Y FEMENIL</h2>
+        <p>En este paraescolar, el constante movimiento del juego no solo despierta tu pasión por el deporte, ¡sino que también beneficia tu salud de muchas maneras! Desde sincronizar tu ritmo cardíaco hasta mejorar tu agilidad mental y tu capacidad de análisis táctico, el baloncesto es una experiencia completa que desafía tanto tu cuerpo como tu mente.
+             <br>
+           Con cada dribble y cada tiro al aro, fortaleces tu resistencia a la fatiga, lo que te proporciona más energía y concentración tanto en tus estudios como en tu vida diaria. Además, al ser un ejercicio aeróbico, tus pulmones se fortalecen y tu circulación sanguínea se optimiza, asegurando un mejor suministro de oxígeno a todo tu cuerpo.
+            <br>
+            Pero el baloncesto no solo se trata de mejorar físicamente, ¡también es una oportunidad perfecta para socializar y hacer nuevos amigos! Al jugar con tus compañeros, fortaleces lazos afectivos y te brinda la oportunidad de conocer gente nueva mientras te diviertes y compartes tu pasión por este apasionante deporte.</p>
+        <span>HORARIO: 8:40 a 10:30 Sabados </span>
+        </div>
+        </div>
+    
+    <div class="postre">
+        <img src="FUTBOL.png" alt="">
+        <div class="postre-info">
+        <h2>FUTBOL VARONIL Y FEMENIL</h2>
+        <p>El fútbol, más que un deporte, es un estilo de vida que trasciende fronteras y culturas. En nuestra escuela, nos enorgullecemos de ser parte de esta vibrante comunidad futbolística, donde la pasión por el juego se une con los beneficios para la salud.
+          <br>
+            Con cada partido, cada pase y cada gol, el fútbol te brinda una oportunidad única para mejorar tu salud cardiovascular. ¡Correr, driblar y disputar el balón son ejercicios que fortalecen tu corazón y mejoran tu función cardíaca, asegurando un estilo de vida activo y saludable!
+            <br>
+            Pero el fútbol es mucho más que un ejercicio físico, es un deporte que requiere precisión, velocidad y fuerza, lo que contribuye al equilibrio corporal de quienes lo practican. Además, liberar el estrés y potenciar la autonomía y confianza son solo algunos de los beneficios mentales que el fútbol ofrece a sus jugadores.</p>
+        <span>HORARIO: 9:50 a 11:40 Miercoles     </span>
+        </div>
+        </div>
+        <div class="postre">
+            <img src="LITERATURA.png" alt="">
+            <div class="postre-info">
+            <h2>TALLER LITERARIO</h2>
+            <p>"El lenguaje escrito es la forma más elevada de lenguaje", así lo expresó Lev Vigotsky, y en nuestro taller, nos inspiramos en esta poderosa cita para explorar y potenciar el talento literario de cada participante.
+                       <br>
+                Imagina un espacio donde compartir tus creaciones, conocer a otros apasionados por la escritura y recibir comentarios constructivos para mejorar tu obra. Nuestro taller literario es eso y mucho más: es un viaje hacia el descubrimiento de tu propia voz como escritor o escritora, desde tu contexto cotidiano hasta las más profundas reflexiones sobre la vida y la sociedad.
+                <br>
+                ¿Qué es un Taller Literario para nosotros? Es un oasis creativo, un curso teórico-práctico diseñado para nutrir tu imaginación y habilidades literarias. Aquí, no solo aprenderás técnicas y conceptos fundamentales, sino que también encontrarás el espacio y el apoyo necesario para desarrollar tu propio estilo y visión única.
+            </p>
+            <span>HORARIO: 11:30 a 1:00 Miercoles</span>
+            </div>
+            </div>
+        
+        <div class="postre">
+            <img src="TAEKWONDO.png" alt="">
+            <div class="postre-info">
+            <h2>TAEKWONDO FEMENIL Y VARONIL</h2>
+            <p>En nuestro programa de Taekwondo, no solo aprenderás los movimientos y técnicas de este antiguo arte marcial, ¡sino que también desarrollarás habilidades para toda la vida! Desde la primera clase, te sumergirás en un ambiente de disciplina, respeto y superación personal.
+             <br>
+                ¿Qué es el paraescolar de Taekwondo para nosotros? Es un espacio donde los estudiantes tienen la oportunidad de explorar su potencial físico y mental mientras adquieren habilidades valiosas como la concentración, la autoconfianza y el control emocional. Nuestros instructores altamente calificados te guiarán en cada paso del camino, asegurándose de que te sientas seguro y motivado en tu viaje de aprendizaje.
+                <br>
+                Además de mejorar tu forma física y aprender técnicas de defensa personal, en nuestro paraescolar de Taekwondo también te divertirás y crearás vínculos fuertes con tus compañeros de equipo. Juntos, celebrarán cada logro y se apoyarán mutuamente en el camino hacia la excelencia.</p>
+            <span>HORARIO: 7:50 a 8:40 Lunes</span>
+            </div>
+            </div>
+            
+            <div class="postre">
+                <img src="BEISBOL.png" alt="">
+                <div class="postre-info">
+                <h2>BEISBOL</h2>
+                <p>En nuestro programa de béisbol, no solo aprenderás las habilidades fundamentales de este apasionante deporte, ¡sino que también experimentarás la emoción y la camaradería que solo el béisbol puede ofrecer!
+                    <br>
+                    ¿Qué es el paraescolar de béisbol para nosotros? Es mucho más que lanzar, batear y correr bases; es un espacio donde los estudiantes exploran su pasión por el juego mientras desarrollan valores clave como el trabajo en equipo, la perseverancia y el espíritu competitivo.
+                    <br>
+                    Nuestros entrenadores expertos te guiarán a través de cada aspecto del juego, desde la técnica hasta la estrategia, asegurándose de que cada jugador alcance su máximo potencial. Ya sea que estés buscando mejorar tus habilidades, hacer nuevos amigos o simplemente disfrutar del juego, nuestro paraescolar de béisbol ofrece algo para todos.</p>
+                <span>HORARIO: Pasatiempo</span>
+                </div>
+                </div><div class="postre">
+                    <img src="INTERCOBAY.png" alt="">
+                    <div class="postre-info">
+                    <h2>INTERCOBAY</h2>
+                    <p>Intercobay es un emocionante evento que reúne a estudiantes de diferentes planteles del Colegio de Bachilleres de Yucatán (Cobay). Durante los Juegos Intercobay, los jóvenes compiten en diversas disciplinas deportivas, fomentando la convivencia, la amistad y la sana competencia. ¡Imagina la energía, la pasión y la camaradería que se vive en estos encuentros! 🏆🤸‍♂️🏀
+                       <br>
+                        Los planteles Cobay de Mérida, Yucatán, se unen en esta emocionante celebración, demostrando su talento y espíritu deportivo. ¡Es una oportunidad única para fortalecer la comunidad estudiantil y celebrar el esfuerzo y dedicación de nuestros jóvenes! 🎉👏</p>
+                    <span></span>
+                    </div>
+                    </div>
+                    </div>
+                    
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const items = document.querySelectorAll('.lisitem');
+
+        items.forEach(item => {
+            item.addEventListener('click', function () {
+                const isActive = this.classList.contains('active');
+                items.forEach(item => item.classList.remove('active'));
+                if (!isActive) {
+                    this.classList.add('active');
+                }
+            });
+        });
+
+        const boton = document.getElementById('boton');
+        boton.addEventListener('click', function() {
+            const lista = document.querySelector('.Lista');
+            lista.classList.toggle('mostrar');
+        });
+    });
+</script>
+<FOOTER><P>&COPY; 2024 ESCUELA COLEGIO DE BACHILLERES DEL ESTADO DE YUCATAN
+<br>
+Todos los derechos reservados </P>
+<button onclick="window.location.href='INICIO.HTML'">Regresar a la Página Principal</button>
+<h1><a  class="pepe" href="#top">ARRIBA</a></h1>
+</FOOTER>
+</body>
+</html>

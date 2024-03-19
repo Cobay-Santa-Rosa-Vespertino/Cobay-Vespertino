@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COBAY SANTA ROSA VESPERTINO</title>
+    <script src="https://kit.fontawesome.com/03a89292db.js" crossorigin="anonymous"></script>
+    <style>
+ body{
+        background-color: #0c2c59;
+    }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        h1 {
+            text-align: center;
+            background-color: aliceblue;
+            padding: 20px;
+        }
+
+        section {
+            padding: 20px;
+        }
+
+        p {
+            color:black;
+        }
+
+        .encabezado {
+            width: 100%;
+            background: rgb(6, 6, 63);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .Lista {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+        }
+
+        .item {
+            padding: 15px;
+            color: white;
+        }
+
+        .item:hover {
+            background-color: rgb(56, 64, 71);
+            border-bottom: solid white 1px;
+        }
+
+        .lisitem {
+            position: relative;
+        }
+
+        .lisitem:hover .slide {
+            display: block;
+        }
+
+        .slide {
+            display: none;
+            position: absolute;
+            background: rgb(6, 6, 63);
+            padding: 10px;
+            top: 50px;
+            left: 0;
+        }
+
+        .slide a {
+            display: block;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+        }
+        .lisitem.active .slide{
+            display: block;
+        }
+
+        #boton {
+            background-color: transparent;
+            border: none;
+            font-size: 24px;
+            color: white;
+            cursor: pointer;
+        }
+        body {
+            background-color:  #0c2c59;
+            background-size: cover;
+            background-position: center;
+            font-family: Arial, sans-serif;
+            color:#333;
+        }
+
+        header {
+            background-color:rgb(62, 4, 87);
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        h1, p {
+            margin-bottom: 20px;
+        }
+
+        .team-member {
+            display: flex;
+            align-items: center;
+            text-align: right;
+            justify-content: space-between;
+            margin-bottom: 20px;
+            padding: 15px;
+            background-color: #eee;
+            border-radius: 8px;
+        }
+
+        .team-member img {
+            border-radius: 50%;
+            margin-right: 20px;
+            width: 100px;
+            height: 100px;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: unset;
+            width: 100%;
+            bottom: 0;
+        }
+        button {
+            display: block;
+            margin: 20px auto;
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #333;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+footer{
+background-color: #f8f6f4 ;
+color: #f8f6f4;
+text-align: center;
+padding: 10px 0;
+position: unset;
+bottom: e;
+width: 100%;
+font-size: 25px;
+}
+.pepe{
+    position: fixed;
+    top: 10px;
+    left:10px;
+    font-size: 30px;
+}
+.pepe {
+    display: inline-block;
+    padding: 10px 20px; 
+    background-color: #007bff;
+        color: #ffffff; 
+    text-decoration: none; 
+        border-radius: 5px; 
+    border: none; 
+    font-size: 16px; 
+    cursor: pointer; 
+    transition: background-color 0.3s ease; 
+  }
+    </style>
+</head>
+<body>
+    <header class="encabezado">
+        <div class="logo__div"></div>
+        <nav>
+            <ul class="Lista">
+                <a class="lisitem" href="INICIO.HTML"><i class="fas fa-home"></i>INICIO</a>
+                <li class="lisitem">
+                    <a class="item" href="#"><i class="fas fa-home"></i> Comunidad</a>
+                    <ul class="slide">
+                        <li><a href="PARAESCOLAR.HTML">Paraescolar</a></li>
+                        <li><a href="AUTORIDADES.HTML">Autoridades</a></li>
+                        <li><a href="ALUMNOS.HTML">Alumnos</a></li>
+                        <li><a href="CAPACITACIONES.HTML">Capacitaciones</a></li>
+                    </ul>
+                </li>
+                <li class="lisitem">
+                    <a class="item" href="#"><i class="fas fa-warehouse"></i> Nosotros</a>
+                    <ul class="slide">
+                        <li><a href="CALENDARIOS.HTML">Calendarios</a></li>
+                        <li><a href="CONVOCATORIAS.HTML">Convocatorias</a></li>
+                        <li><a href="MAESTROS.HTML">Maestros</a></li>
+                        <li><a href="GRUPOS Y AULAS.HTML">Grupos y Aulas</a></li>
+                    </ul>
+                </li>
+                <li class="lisitem"><a class="item" href="UBICACION.HTML"><i class="fas fa-location-arrow"></i> Ubicacion</a></li>
+                <li class="lisitem"><a class="item" href="ACERCA DE.HTML"><i class="fas fa-info"></i> Acerca de</a></li>
+                <li class="lisitem"><a class="item" href="INSTALACIONES.HTML"><i class="fas fa-info"></i> Instalaciones</a></li>
+            </ul>
+        </nav>
+        <div class="boton__div">
+            <button id="boton"><i class="fas fa-bars"></i></button>
+        </div>
+    </header>
+    <h1>COBAY SANTA ROSA VESPERTINO 
+<br>
+        ACERCA DE NOSOTROS
+    </h1>
+
+    <div class="container">
+        <h2>Maestros</h2>
+        
+        <div class="team-member">
+            <img src="https://i.pinimg.com/736x/67/7e/f9/677ef96c98613c944d9529ea23a1c14d.jpg" alt="Miembro del Equipo 1">
+            <div>
+                <h3>Delmy Couoh</h3>
+                <p>Licenciada en educacion</p>
+            </div>
+        </div>
+
+        <div class="team-member">
+            <img src="https://i.pinimg.com/736x/34/14/e7/3414e7773d274e8e36657885d3eefc61.jpg" alt="Miembro del Equipo 2">
+            <div>
+                <h3>Roger Flores Gongora</h3>
+                <p>Ingenieria en sistemas computacionales</p>
+            </div>
+
+        </div>
+
+        <div class="team-member">
+            <img src="https://i.pinimg.com/736x/80/64/1d/80641da2d1cde23d1366dc6c215df013.jpg" alt="Miembro del Equipo 3">
+            <div>
+                <h3>Blanca Marisol Cutz Kantun</h3>
+                <p>Doctora en matematicas</p>
+            </div>
+        </div>
+
+        <div class="team-member">
+            <img src="https://i.pinimg.com/736x/67/a0/18/67a018c20e9fb5ef8723ddc781feeb1b.jpg" alt="Miembro del Equipo 4">
+            <div>
+                <h3>Miguel Flores Sabido</h3>
+                <p>Licenciado en enseñanza matematicas</p>
+            </div>
+        </div>
+
+        <div class="team-member">
+            <img src="https://i.pinimg.com/736x/82/06/57/8206577b4188282095d77cc94a31f057.jpg" alt="Miembro del Equipo 5">
+            <div>
+                <h3>Rosario Raygoza Velazquez</h3>
+                <p>Ingenieria en sistemas computacionales, maestria tecnologica educativa</p>
+            </div>
+        </div>
+
+        <div class="team-member">
+            <img src="https://i.pinimg.com/736x/61/14/16/61141652fbc356811b16c4246da9615e.jpg" alt="Miembro del Equipo 4">
+            <div>
+                <h3>Alberto Alonso Perez Espadas</h3>
+                <p>Licenciado en mercadotecnia</p>
+            </div>
+        </div>
+
+        <div class="team-member">
+            <img src="https://i.pinimg.com/736x/c6/4c/59/c64c593d40a39c1a2eb871c3e2facf8c.jpg" alt="Miembro del Equipo 4">
+            <div>
+                <h3>Jorge Arturo Perez Aguilar</h3>
+                <p>Ingeniero bioquimico, maestria en ingenieria</p>
+            </div>
+        </div>
+
+        <div class="team-member">
+            <img src="https://www.espectaculosbcn.com/wp-content/uploads/2021/09/Literatura-contemporanea-latinoamericana-1-1.jpg " alt="Miembro del Equipo 4">
+            <div>
+                <h3>Jazmin Castillo Becerril</h3>
+                <p>Licenciatura en literatura latinoamericana</p>
+            </div>
+        </div>
+
+        <div class="team-member">
+            <img src="https://i.pinimg.com/736x/00/d7/ed/00d7edc174ea3b5e877dcb0fe2a040de.jpg" alt="Miembro del Equipo 4">
+            <div>
+                <h3>Sara Burgos Becerra</h3>
+                <p>Licenciada en computacion en sistemas</p>
+            </div>
+        </div>
+
+        <div class="team-member">
+            <img src="https://www.shutterstock.com/image-photo/closeup-scientific-microscope-data-analysis-260nw-1667097331.jpg" alt="Miembro del Equipo 4">
+            <div>
+                <h3>Yendi Areli Cabrera Sanchez</h3>
+                <p>Quimico biologo bromatologo</p>
+            </div>
+        </div>
+    </div>
+<script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const items = document.querySelectorAll('.lisitem');
+    
+            items.forEach(item => {
+                item.addEventListener('click', function () {
+                    const isActive = this.classList.contains('active');
+                    items.forEach(item => item.classList.remove('active'));
+                    if (!isActive) {
+                        this.classList.add('active');
+                    }
+                });
+            });
+    
+            const boton = document.getElementById('boton');
+            boton.addEventListener('click', function() {
+                const lista = document.querySelector('.Lista');
+                lista.classList.toggle('mostrar');
+            });
+        });
+    </script>
+ <FOOTER><P>&COPY; 2024 ESCUELA COLEGIO DE BACHILLERES DEL ESTADO DE YUCATAN
+<br>
+Todos los derechos reservados 
+     </P>
+<button onclick="window.location.href='INICIO.HTML'">Regresar a la Página Principal</button>
+<h1><a  class="pepe" href="#top">ARRIBA</a></h1>
+</FOOTER>
+</body>
+</html>

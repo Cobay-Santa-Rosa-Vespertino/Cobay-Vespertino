@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COBAY SANTA ROSA VESPERTINO</title>
+    <script src="https://kit.fontawesome.com/03a89292db.js" crossorigin="anonymous"></script>
+    <style>
+        body{
+        background-color: #0c2c59;
+    }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        h1 {
+            text-align: center;
+            background-color: aliceblue;
+            padding: 20px;
+        }
+
+        section {
+            padding: 20px;
+        }
+
+        p {
+            color: black;
+        }
+
+        .encabezado {
+            width: 100%;
+            background: rgb(6, 6, 63);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .Lista {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+        }
+
+        .item {
+            padding: 15px;
+            color: white;
+        }
+
+        .item:hover {
+            background-color: rgb(56, 64, 71);
+            border-bottom: solid white 1px;
+        }
+
+        .lisitem {
+            position: relative;
+        }
+
+        .lisitem:hover .slide {
+            display: block;
+        }
+
+        .slide {
+            display: none;
+            position: absolute;
+            background: rgb(6, 6, 63);
+            padding: 10px;
+            top: 50px;
+            left: 0;
+        }
+
+        .slide a {
+            display: block;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+        }
+        .lisitem.active .slide{
+            display: block;
+        }
+
+        #boton {
+            background-color: transparent;
+            border: none;
+            font-size: 24px;
+            color: white;
+            cursor: pointer;
+        }
+footer{
+background-color:#f8f6f4;
+color: black;
+text-align: center;
+padding: 10px 0;
+position: unset;
+bottom: e;
+width: 100%;
+}
+footer {
+ background-color: #333;
+color: white;
+text-align: center;
+padding: 10px;
+position: unset;
+width: 100%;
+bottom: 0;
+        }
+button {
+display: block;
+margin: 20px auto;
+padding: 10px 20px;
+font-size: 16px;
+background-color: #333;
+color: white;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+        }
+footer{
+background-color: #f8f6f4 ;
+color: #f8f6f4;
+text-align: center;
+padding: 10px 0;
+position: unset;
+bottom: e;
+width: 100%;
+font-size: 25px;
+}
+.pepe{
+    position: fixed;
+    top: 10px;
+    left:10px;
+    font-size: 30px;
+}
+.pepe {
+    display: inline-block;
+    padding: 10px 20px; 
+    background-color: #007bff;
+    color: #ffffff; 
+    text-decoration: none; 
+    border-radius: 5px; 
+    border: none; 
+    font-size: 16px; 
+    cursor: pointer; 
+    transition: background-color 0.3s ease; 
+  }
+.contenido {
+background-color: #007bff;
+width: 80%;
+margin: 0 auto;
+padding: 20px;
+border: 5px solid #ccc;
+border-radius: 10px;
+}
+.card {
+width: 75%;
+margin:auto;
+border: 1px solid #ccc; 
+border-radius: 10px; 
+padding: 20px; 
+background-color: #fff; 
+        }
+.pedro1{
+font-size: 20px;
+font-family: 'Times New Roman', Times, serif;
+}
+    </style>
+</head>
+<body>
+    <header class="encabezado">
+        <div class="logo__div"></div>
+        <nav>
+            <ul class="Lista">
+                <a class="lisitem" href="INICIO.HTML"><i class="fas fa-home"></i>INICIO</a>
+                <li class="lisitem">
+                    <a class="item" href="#"><i class="fas fa-home"></i> Comunidad</a>
+                    <ul class="slide">
+                        <li><a href="MAESTROS.HTML">Maestros</a></li>
+                        <li><a href="AUTORIDADES.HTML">Autoridades</a></li>
+                        <li><a href="ALUMNOS.HTML">Alumnos</a></li>
+                        <li><a href="CAPACITACIONES.HTML">Capacitaciones</a></li>
+                    </ul>
+                </li>
+                <li class="lisitem">
+                    <a class="item" href="#"><i class="fas fa-warehouse"></i> Nosotros</a>
+                    <ul class="slide">
+                        <li><a href="CALENDARIOS.HTML">Calendarios</a></li>
+                        <li><a href="CONVOCATORIAS.HTML">Convocatorias</a></li>
+                        <li><a href="PARAESCOLAR.HTML">Paraescolar</a></li>
+                        <li><a href="GRUPOS Y AULAS.HTML">Grupos y Aulas</a></li>
+                    </ul>
+                </li>
+                <li class="lisitem"><a class="item" href="UBICACION.HTML"><i class="fas fa-location-arrow"></i> Ubicacion</a></li>
+                <li class="lisitem"><a class="item" href="ACERCA DE.HTML"><i class="fas fa-info"></i> Acerca de</a></li>
+                <li class="lisitem"><a class="item" href="INSTALACIONES.HTML"><i class="fas fa-info"></i> Instalaciones</a></li>
+            </ul>
+        </nav>
+        <div class="boton__div">
+            <button id="boton"><i class="fas fa-bars"></i></button>
+        </div>
+    </header>
+    <h1>COBAY SANTA ROSA VESPERTINO</h1>
+    <br>
+<div class="contenido">
+    <center><img src="COBAY5.PNG" alt=""></center>
+    <br>
+    <h1>Convocatoria del Proceso de Admisión en Educación Media Superior, Ciclo Escolar 2024-2025</h1>
+    <br>
+    <center>
+        <iframe src="240129_Convocatoria_Bachillerato_2024.pdf" width="900px" height="2200px">.
+        </iframe>
+    </center>
+    <br>
+    <div class="card">
+        <center><img src="ACREDI.PNG.jpeg" alt="" width="700"></center>
+        <div class="pedro1">
+            <h1>Curso ACREDITABACH</h1>
+            <p>El Colegio de Bachilleres ofrece cursos en la modalidad presencial para todos los interesados en obtener el
+                certificado de Bachillerato por medio del examen único ACREDITABACH del Acuerdo 286 de la SEP.</p>
+                <br>
+                <h1>Requisitos</h1>
+                <p>1. Los interesados en inscribirse al curso ACREDITABACH deberán ingresar los datos requeridos en la página:   
+                Colegio de Bachilleres del Estado de Yucatán en la convocatoria a través del link
+                <iframe src="https://forms.gle/AYQ1cJUbcfyCTPGL7" width="700px" height="400px">.
+                </iframe></p>
+                <br>
+                <p>2. Para mayores informes en la Dirección General del Colegio de Bachilleres calle 34 # 420 B X 35 Colonia López Mateos.  Teléfono (999) 6 11 86 90  ext. 28030</p>
+                <br>
+                <p>3. La persona que realice el registro, se le enviará  la ficha de referencia bancaria para realizar el depósito en el banco HSBC (No transferencia bancaria) después el 
+                interesado deberá enviar los siguientes documentos: acta de nacimiento, CURP, INE y comprobante de pago en forma legible al correo:  leidy.puc@cobay.edu.mx</p>
+                <br>
+                <p>4. El curso inicia el sábado 20 de enero al 15 de junio  de 2024</p>
+                <br>
+                <p>5. Seleccionar una de las tres sedes que impartirán el curso.</p>
+                <br>
+                <p>COBAY Plantel Chenkú: Calle 32 s/n x 19 y 21
+                Teléfono (999) 9 87 78 47 y (999)  4 32 50 67.</p>
+                <p>COBAY Plantel Santa Rosa: Calle 46 sur x 107 y 109 
+                Teléfono (999) 9 29 42 34.</p>
+                <p>COBAY Plantel Xoclán: Calle 132 s/n x 47 y 49 Colonia Xoclán Santos 
+                Teléfono (999) 9 85 50 00</p>
+                <br>
+                <p>Costos del curso
+                Particulares $ 3,150.00 
+                Trabajadores del gobierno  $ 2,650.00</p>
+        </div>
+    </div>
+</div>
+<br>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const items = document.querySelectorAll('.lisitem');
+    
+            items.forEach(item => {
+                item.addEventListener('click', function () {
+                    const isActive = this.classList.contains('active');
+                    items.forEach(item => item.classList.remove('active'));
+                    if (!isActive) {
+                        this.classList.add('active');
+                    }
+                });
+            });
+    
+            const boton = document.getElementById('boton');
+            boton.addEventListener('click', function() {
+                const lista = document.querySelector('.Lista');
+                lista.classList.toggle('mostrar');
+            });
+        });
+    </script>
+<h1><a  class="pepe" href="#top">ARRIBA</a></h1>
+    
+    <FOOTER><P>&COPY; 2024 ESCUELA COLEGIO DE BACHILLERES DEL ESTADO DE YUCATAN
+        <br>
+        todos los derechos reservados 
+             </P>
+        <button onclick="window.location.href='INICIO.HTML'">Regresar a la Página Principal</button>
+        
+        </FOOTER>
+
+</body>
+</html>

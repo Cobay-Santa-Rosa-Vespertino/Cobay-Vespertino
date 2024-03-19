@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COBAY SANTA ROSA VESPERTINO</title>
+    <script src="https://kit.fontawesome.com/03a89292db.js" crossorigin="anonymous"></script>
+    <style>
+ body{
+        background-color: #0c2c59;
+    }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        h1 {
+            text-align: center;
+            background-color: rgb(210, 214, 218);
+            padding: 20px;
+        }
+
+        section {
+            padding: 20px;
+        }
+
+        p {
+            color: black;
+        }
+
+        .encabezado {
+            width: 100%;
+            background: rgb(6, 6, 63);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .Lista {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+        }
+
+        .item {
+            padding: 15px;
+            color: white;
+        }
+
+        .item:hover {
+            background-color: rgb(56, 64, 71);
+            border-bottom: solid white 1px;
+        }
+
+        .lisitem {
+            position: relative;
+        }
+
+        .lisitem:hover .slide {
+            display: block;
+        }
+
+        .slide {
+            display: none;
+            position: absolute;
+            background: rgb(6, 6, 63);
+            padding: 10px;
+            top: 50px;
+            left: 0;
+        }
+
+        .slide a {
+            display: block;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+        }
+        .lisitem.active .slide{
+            display: block;
+        }
+
+        #boton {
+            background-color: transparent;
+            border: none;
+            font-size: 24px;
+            color: white;
+            cursor: pointer;
+        }
+footer{
+background-color: white;
+color: #f8f6f4;
+text-align: center;
+padding: 10px 0;
+position: unset;
+bottom: e;
+width: 100%;
+font-size: 25px;
+}
+footer {
+ background-color: #333;
+color: white;
+text-align: center;
+padding: 10px;
+position: unset;
+width: 100%;
+bottom: 0;
+        }
+button {
+display: block;
+margin: 20px auto;
+padding: 10px 20px;
+font-size: 16px;
+background-color: #333;
+color: white;
+border: none;
+border-radius: 5px;
+cursor: pointer;
+        }
+footer{
+background-color: #f8f6f4 ;
+color: #f8f6f4;
+text-align: center;
+padding: 10px 0;
+position: unset;
+bottom: e;
+width: 100%;
+font-size: 25px;
+}
+.pepe{
+    position: fixed;
+    top: 10px;
+    left:10px;
+    font-size: 30px;
+}
+.pepe {
+    display: inline-block;
+    padding: 10px 20px; 
+    background-color: #007bff;
+        color: #ffffff; 
+    text-decoration: none; 
+        border-radius: 5px; 
+    border: none; 
+    font-size: 16px; 
+    cursor: pointer; 
+    transition: background-color 0.3s ease; 
+  }
+    </style>
+</head>
+<body>
+    <header class="encabezado">
+        <div class="logo__div"></div>
+        <nav>
+            <ul class="Lista">
+                <a class="lisitem" href="INICIO.HTML"><i class="fas fa-home"></i>INICIO</a>
+                <li class="lisitem">
+                    <a class="item" href="#"><i class="fas fa-home"></i> Comunidad</a>
+                    <ul class="slide">
+                        <li><a href="PARAESCOLAR.HTML">Paraescolar</a></li>
+                        <li><a href="AUTORIDADES.HTML">Autoridades</a></li>
+                        <li><a href="ALUMNOS.HTML">Alumnos</a></li>
+                        <li><a href="CAPACITACIONES.HTML">Capacitaciones</a></li>
+                    </ul>
+                </li>
+                <li class="lisitem">
+                    <a class="item" href="#"><i class="fas fa-warehouse"></i> Nosotros</a>
+                    <ul class="slide">
+                        <li><a href="CALENDARIOS.HTML">Calendarios</a></li>
+                        <li><a href="CONVOCATORIAS.HTML">Convocatorias</a></li>
+                        <li><a href="MAESTROS.HTML">Maestros</a></li>
+                        <li><a href="GRUPOS Y AULAS.HTML">Grupos y Aulas</a></li>
+                    </ul>
+                </li>
+                <li class="lisitem"><a class="item" href="UBICACION.HTML"><i class="fas fa-location-arrow"></i> Ubicacion</a></li>
+                <li class="lisitem"><a class="item" href="ACERCA DE.HTML"><i class="fas fa-info"></i> Acerca de</a></li>
+                <li class="lisitem"><a class="item" href="INSTALACIONES.HTML"><i class="fas fa-info"></i> Instalaciones</a></li>
+            </ul>
+        </nav>
+        <div class="boton__div">
+            <button id="boton"><i class="fas fa-bars"></i></button>
+        </div>
+    </header>
+    <h1>COBAY SANTA ROSA VESPERTINO</h1>
+    <br>
+    <center><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3667.816449402388!2d-89.61913924190019!3d20.94267612470603!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f56719a46a049dd%3A0x49599c3ef46113ce!2sCOBAY%20plantel%20Santa%20Rosa!5e0!3m2!1ses-419!2smx!4v1710218350975!5m2!1ses-419!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></center>
+    <br>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const items = document.querySelectorAll('.lisitem');
+    
+            items.forEach(item => {
+                item.addEventListener('click', function () {
+                    const isActive = this.classList.contains('active');
+                    items.forEach(item => item.classList.remove('active'));
+                    if (!isActive) {
+                        this.classList.add('active');
+                    }
+                });
+            });
+    
+            const boton = document.getElementById('boton');
+            boton.addEventListener('click', function() {
+                const lista = document.querySelector('.Lista');
+                lista.classList.toggle('mostrar');
+            });
+        });
+    </script>
+    <script src=""></script>
+    <script src=""></script>
+    <h1><a  class="pepe" href="#top">ARRIBA</a></h1>
+
+<FOOTER><P>&COPY; 2024 ESCUELA COLEGIO DE BACHILLERES DEL ESTADO DE YUCATAN
+<br>
+Todos los derechos reservados 
+</P>
+<button onclick="window.location.href='INICIO.HTML'">Regresar a la Página Principal</button>
+</FOOTER> 
+</body>
+</html>

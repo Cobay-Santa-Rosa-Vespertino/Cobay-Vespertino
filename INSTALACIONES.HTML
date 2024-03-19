@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COBAY SANTA ROSA VESPERTINO</title>
+    <script src="https://kit.fontawesome.com/03a89292db.js" crossorigin="anonymous"></script>
+    <style>
+ body{
+        background-color: #0c2c59;
+    }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        h1 {
+            text-align: center;
+            background-color: aliceblue;
+            padding: 20px;
+        }
+
+        section {
+            padding: 20px;
+        }
+
+        p {
+            color: rgb(21, 17, 10);
+        }
+
+        .encabezado {
+            width: 100%;
+            background: rgb(6, 6, 63);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .Lista {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+        }
+
+        .item {
+            padding: 15px;
+            color: white;
+        }
+
+        .item:hover {
+            background-color: rgb(56, 64, 71);
+            border-bottom: solid white 1px;
+        }
+
+        .lisitem {
+            position: relative;
+        }
+
+        .lisitem:hover .slide {
+            display: block;
+        }
+
+        .slide {
+            display: none;
+            position: absolute;
+            background: rgb(6, 6, 63);
+            padding: 10px;
+            top: 50px;
+            left: 0;
+        }
+
+        .slide a {
+            display: block;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+        }
+        .lisitem.active .slide{
+            display: block;
+        }
+
+        #boton {
+            background-color: transparent;
+            border: none;
+            font-size: 24px;
+            color: white;
+            cursor: pointer;
+        }
+        body {
+        background-color: #0c2c59;
+            background-size: cover;
+            background-position: center;
+            font-family: Arial, sans-serif;
+            color:black;
+        }
+
+        h1 {
+            text-align: center;
+            padding: 20px;
+            background-color: white;
+        }
+
+        table {
+            width: 80%;
+            margin: 20px auto;
+            border-collapse: collapse;
+            background-color: rgba(255, 255, 255, 0.8);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+
+        th, td {
+            padding: 15px;
+            text-align:center;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 30px;
+        }
+
+        th {
+            background-color: #333;
+            color: white;
+            text-align:center;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 30px;
+        }
+
+        img {
+            width: 100%;
+            width: 300px;
+            height: 300px;
+            display: block;
+            margin: 10px auto;
+            border-radius: 10px;
+        }
+        button {
+            display: block;
+            margin: 20px auto;
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #333;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+footer{
+background-color: white;
+color: #f8f6f4;
+text-align: center;
+padding: 10px 0;
+position: unset;
+bottom: e;
+width: 100%;
+}
+.pepe{
+    position: fixed;
+    top: 10px;
+    left:10px;
+    font-size: 30px;
+}
+.pepe {
+    display: inline-block;
+    padding: 10px 20px; 
+    background-color: #007bff;
+        color: #ffffff; 
+    text-decoration: none; 
+        border-radius: 5px; 
+    border: none; 
+    font-size: 16px; 
+    cursor: pointer; 
+    transition: background-color 0.3s ease; 
+  }
+  .opa{
+    width: 1200px;
+    height: 2000px;
+  }
+    </style>
+</head>
+<body>
+    <header class="encabezado">
+        <div class="logo__div"></div>
+        <nav>
+            <ul class="Lista">
+                <a class="lisitem" href="INICIO.HTML"><i class="fas fa-home"></i>INICIO</a>
+                <li class="lisitem">
+                    <a class="item" href="#"><i class="fas fa-home"></i> Comunidad</a>
+                    <ul class="slide">
+                        <li><a href="PARAESCOLAR.HTML">Paraescolar</a></li>
+                        <li><a href="AUTORIDADES.HTML">Autoridades</a></li>
+                        <li><a href="ALUMNOS.HTML">Alumnos</a></li>
+                        <li><a href="CAPACITACIONES.HTML">Capacitaciones</a></li>
+                    </ul>
+                </li>
+                <li class="lisitem">
+                    <a class="item" href="#"><i class="fas fa-warehouse"></i> Nosotros</a>
+                    <ul class="slide">
+                        <li><a href="CALENDARIOS.HTML">Calendarios</a></li>
+                        <li><a href="CONVOCATORIAS.HTML">Convocatorias</a></li>
+                        <li><a href="MAESTROS.HTML">Maestros</a></li>
+                        <li><a href="GRUPOS Y AULAS.HTML">Grupos y Aulas</a></li>
+                    </ul>
+                </li>
+                <li class="lisitem"><a class="item" href="UBICACION.HTML"><i class="fas fa-location-arrow"></i> Ubicacion</a></li>
+                <li class="lisitem"><a class="item" href="ACERCA DE.HTML"><i class="fas fa-info"></i> Acerca de</a></li>
+                <li class="lisitem"><a class="item" href="INSTALACIONES.HTML"><i class="fas fa-info"></i> Instalaciones</a></li>
+            </ul>
+        </nav>
+        <div class="boton__div">
+            <button id="boton"><i class="fas fa-bars"></i></button>
+        </div>
+    </header>
+    <h1>COBAY SANTA ROSA VESPERTINO</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Areas</th>
+                <th>Imagen</th>
+                <th>Descripción</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Entrada</td>
+                <td><img src="COBAY2.PNG" alt="Entrada"></td>
+                <td>Es el acceso principal a las instalaciones del plantel,en esta entran los alumnos y los docentes.</td>
+            </tr>
+            <tr>
+                <td>Prefectura</td>
+                <td><img src="PREFECTURA.png.jpeg" alt="Prefectura"></td>
+                <td>Esta se encuentra a un costado de la entrada,en ella se encuentran los prefectos.</td>
+            </tr>
+            <tr>
+                <td>Orientacion</td>
+                <td><img src="ORIENTACION.png.jpeg" alt="Orientacion"></td>
+                <td>Es un espacio destinado para los alumnos que requieran una seccion de psicologia.</td>
+            </tr>
+            <tr>
+                <td>Dirrecion y coordinacion</td>
+                <td><img src="COORDINACION.png.jpeg" alt="Cordinacion"></td>
+                <td>Es un espacio destinado para las autoridades y  los administradores de la escuela</td>
+            </tr>
+            <tr>
+                <td>Baños de maestros</td>
+                <td><img src="BAÑOS MAESTROS.png.jpeg" alt="Baños de maestros"></td>
+                <td>Esta se encuentra a un costado de coordinacion, esta destinada unicamente para los maestros</td>
+            </tr>
+            <tr>
+                <td>Biblioteca</td>
+                <td><img src="biblio.png.jpeg" alt="Pizza Margarita"></td>
+                <td>Es un espacio destinado para los alumnos que requieran un libro, investigar o hacer tarea, esta area es utilizada por los alumnos de taller literario.</td>
+            </tr>
+            <tr>
+                <td>Sala de maestros</td>
+                <td><img src="SALA DE MAESTROS.png.jpeg" alt="Sala de maestros"></td>
+                <td>Es un espacio destinado para los maestros,pueden estar mientras cambian de clase.</td>
+            </tr>
+            <tr>
+                <td>Plaza civica</td>
+                <td><img src="PLAZA CIVICA.png.jpeg" alt="Plaza civica"></td>
+                <td>Este espacio esta destinado para los realizar los homenajes y cualquier otra actividad realizada por las autoridades.</td>
+            </tr>
+           <tr>
+                <td>Auditorio</td>
+                <td><img src="LITERATURA.png" alt="Pizza Margarita"></td>
+                <td>En este espacio se llevan a cabo conferencias planeadas por las autoridades de igual forma se usa para eventos de los alumnos.</td>
+            </tr>
+            <tr>
+                <td>Aulas</td>
+                <td><img src="IMAGEN05.PNG.jpeg" alt="Pizza Margarita"></td>
+                <td>Es un espacio destinado para que los alumnos lleven sus clases.</td>
+            </tr>
+            <tr>
+                <td>Baños</td>
+                <td><img src="IMAGEN03.PNG.jpeg" alt="Pizza Margarita"></td>
+                <td>Es un espacio destinado para los alumnos.</td>
+            </tr>
+            <tr>
+                <td>Cooperativa</td>
+                <td><img src="COOPERATIVA.png.jpeg" alt="Cooperativa"></td>
+                <td>En este espacio los alumnos pueden comprar su comida.</td>
+            </tr>
+            <tr>
+                <td>Campo</td>
+                <td><img src="IMAGEN04.PNG.jpeg" alt="Pizza Margarita"></td>
+                <td>Este espacio esta destinado para los alumnos de paraescolar de futbol, en el se llevan acabo los torneos y entrenamientos.</td>
+            </tr>
+            <tr>
+                <td>Estacionamiento Interior</td>
+                <td><img src="IMAGEN02.PNG.jpeg" alt="Pizza Margarita"></td>
+                <td>Es un espacio destinado para los maestros, en el pueden dejar sus vehiculos.</td>
+            </tr>
+            <tr>
+                <td>Estacionamiento Exterior</td>
+                <td><img src="WhatsApp Image 2024-03-19 at 7.55.57 AM.jpeg" alt="Pizza Margarita"></td>
+                <td>Es un espacio destinado para los alumnos que requieran dejar su vehiculo.</td>
+            </tr>
+        </tbody>
+    </table>
+    <center><img class="opa" src="WhatsApp Image 2024-03-19 at 1.02.13 AM.jpeg" alt=""></center>
+
+   
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const items = document.querySelectorAll('.lisitem');
+    
+            items.forEach(item => {
+                item.addEventListener('click', function () {
+                    const isActive = this.classList.contains('active');
+                    items.forEach(item => item.classList.remove('active'));
+                    if (!isActive) {
+                        this.classList.add('active');
+                    }
+                });
+            });
+    
+            const boton = document.getElementById('boton');
+            boton.addEventListener('click', function() {
+                const lista = document.querySelector('.Lista');
+                lista.classList.toggle('mostrar');
+            });
+        });
+    </script>
+<h1><a  class="pepe" href="#top">ARRIBA</a></h1>
+
+<FOOTER><P>&COPY; 2024 ESCUELA COLEGIO DE BACHILLERES DEL ESTADO DE YUCATAN
+<br>
+Todos los derechos reservados 
+    </P>
+<button onclick="window.location.href='INICIO.HTML'">Regresar a la Página Principal</button>
+</FOOTER>
+</body>
+</html>
